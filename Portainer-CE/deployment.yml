@@ -7,7 +7,7 @@ metadata:
     io.portainer.kubernetes.application.stack: portainer
     app.kubernetes.io/name: portainer
     app.kubernetes.io/instance: portainer
-    app.kubernetes.io/version: "ce-latest-ee-2.19.4"
+    app.kubernetes.io/version: "ce-latest-ee-2.20.1"
 spec:
   replicas: 1
   strategy:
@@ -26,7 +26,7 @@ spec:
       serviceAccountName: portainer-sa-clusteradmin
       containers:
         - name: portainer
-          image: portainer/portainer-ce:2.20.0
+          image: portainer/portainer-ce:2.20.1
           imagePullPolicy: Always
           args:
             - '--tunnel-port=30776'          
